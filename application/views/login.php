@@ -11,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <body>
 
   <?php if($this->session->flashdata("sucess")) : ?>
@@ -41,7 +41,7 @@
           hsl(218, 41%, 20%) 75%,
           hsl(218, 41%, 19%) 80%,
           transparent 100%);
-          height: 100vh;
+          min-height: 100vh;
     }
 
   
@@ -54,6 +54,10 @@
 
     input {
       margin: 20px 0;
+    }
+
+    body {
+      overflow: scroll;
     }
   </style>
 
